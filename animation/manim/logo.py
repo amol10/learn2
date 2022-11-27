@@ -15,3 +15,7 @@ class ManimCELogo(Scene):
 		logo = VGroup(triangle, square, circle, ds_m)
 		logo.move_to(ORIGIN)
 		self.add(logo)
+
+
+ml = ManimCELogo()
+ml.construct()
