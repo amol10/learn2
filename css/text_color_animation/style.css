@@ -3,6 +3,9 @@ The url points to a stylsheet defining fonts for this stylesheet.*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap");
 
 body {
+	/* What is the difference between padding and margin?
+	Margin is the space around an element's border, while padding is the 
+	space between an element's border and its contemts. */
 	padding: 0;
 	margin: 0;
 	height: 100vh;
@@ -27,6 +30,9 @@ ul {
 }
 
 li {
+	/* The list-style property is a shorthand that allows you to set all the list 
+	style properties at once.
+	property values; square, inside, url, etc. */	
 	list-style: none;
 }
 
@@ -37,19 +43,30 @@ div {
 	justify-content: center;
 	align-items: center;
 	font-size: 46px;
+	/* The cursor property sets the mouse cursor, if any, to show when the mouse 
+	pointer is over an element.
+	property values: grab, help, wait, not-allowed, crosshair, zoom-in */
 	cursor: pointer;
 	margin: 0 4px;
 	border-radius: 20px;
 	color: yellow;
+	/* The text-shadow property specifies a shadow drawn for text.
+	parameters: x offset, y offset, blur radius, color 
+	Multiple shadows can be specified, they are drawn one over another. */
 	text-shadow: 0 0 15px yellow, 0 0 25px yellow;
-	animation: animate 1.5s linear infinite;
+	/* animation: animate 1.5s linear infinite; */
 }
 
 @keyframes animate {
 	0% {
+		/* The filter property applies graphical effects like, blur, color shift, 
+		etc. to elements.
+		property values: blur, hue-rotate, grayscale, contrast, url, drop-shadow */
 		filter: hue-rotate(0deg);
 	}
 	100% {
+		/* The hue-rotate function rotates the hue of an element by the specified
+		angle. */
 		filter: hue-rotate(360deg);
 	}
 }
