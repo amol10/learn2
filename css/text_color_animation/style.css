@@ -22,7 +22,14 @@ body {
 	along the inline axis for a grid layout.
 	Q. What are these axes? */
 	justify-content: center;
-	align-items: center; /**/
+	/* The align-items property sets the align-self property on all the direct 
+	children of an element. In the flexbox, it controls the alignment of elements 
+	along the cross axis and in the grid layout, it controls the alignment of 
+	elements along the block axis.
+	Cross Axis: In flexbox, it is the axis that runs perpendicular to the main 
+	axis.
+	Later: More on axes. */
+	align-items: center;
 }
 
 ul {
